@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress</title>
+</head>
+
+<body>
+    <center><h1>Welcome To My Website</h1></center>
+    <form id="Form">
+        <label for="textInput">Masukkan teks:</label><br>
+        <input type="text" id="textInput" name="textInput"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById("Form").addEventListener("submit", function (event) {
+            var textInput = document.getElementById("textInput").value;
+            alert("Teks: " + textInput);
+        });
+    </script>
+
+</body>
+
+</html>
